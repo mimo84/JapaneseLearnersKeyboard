@@ -1,0 +1,61 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyWidth="10%p" android:horizontalGap="0px" android:verticalGap="0px" android:keyHeight="40dp">
+
+    <Row>
+        <Key android:codes="12450" android:keyLabel="ア" />
+        <Key android:codes="12452" android:keyLabel="イ" />
+        <Key android:codes="12454" android:keyLabel="ウ" />
+        <Key android:codes="12456" android:keyLabel="エ" />
+        <Key android:codes="12458" android:keyLabel="オ" />
+        <Key android:codes="12460" android:keyLabel="ガ" />
+        <Key android:codes="12462" android:keyLabel="ギ" />
+        <Key android:codes="12464" android:keyLabel="グ" />
+        <Key android:codes="12466" android:keyLabel="ゲ" />
+        <Key android:codes="12468" android:keyLabel="ゴ" />
+        <Key android:codes="12470" android:keyLabel="ザ" />
+    </Row>
+    <Row>
+        <Key android:codes="12472" android:keyLabel="ジ" />
+        <Key android:codes="12474" android:keyLabel="ズ" />
+        <Key android:codes="12476" android:keyLabel="ゼ" />
+        <Key android:codes="12478" android:keyLabel="ゾ" />
+        <Key android:codes="12480" android:keyLabel="ダ" />
+        <Key android:codes="12482" android:keyLabel="ヂ" />
+        <Key android:codes="12484" android:keyLabel="ツ" />
+        <Key android:codes="12486" android:keyLabel="テ" />
+        <Key android:codes="12488" android:keyLabel="ト" />
+        <Key android:codes="12490" android:keyLabel="ナ" />
+        <Key android:codes="12492" android:keyLabel="ヌ" />
+        <Key android:codes="12494" android:keyLabel="ノ" />
+    </Row>
+    <Row>
+        <Key android:codes="12496" android:keyLabel="バ" />
+        <Key android:codes="12498" android:keyLabel="ヒ" />
+        <Key android:codes="12500" android:keyLabel="ピ" />
+        <Key android:codes="12502" android:keyLabel="ブ" />
+        <Key android:codes="12504" android:keyLabel="ヘ" />
+        <Key android:codes="12506" android:keyLabel="ペ" />
+        <Key android:codes="12508" android:keyLabel="ボ" />
+        <Key android:codes="12510" android:keyLabel="マ" />
+        <Key android:codes="12512" android:keyLabel="ム" />
+        <Key android:codes="12514" android:keyLabel="モ" />
+        <Key android:codes="12516" android:keyLabel="ヤ" />
+    </Row>
+    <Row>
+        <Key android:codes="12518" android:keyLabel="ユ" />
+        <Key android:codes="12520" android:keyLabel="ヨ" />
+        <Key android:codes="12522" android:keyLabel="リ" />
+        <Key android:codes="12524" android:keyLabel="レ" />
+        <Key android:codes="12526" android:keyLabel="ヮ" />
+        <Key android:codes="12528" android:keyLabel="ヰ" />
+        <Key android:codes="12530" android:keyLabel="ヲ" />
+        <Key android:codes="12532" android:keyLabel="ヴ" />
+        <Key android:codes="12534" android:keyLabel="ヶ" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p" android:keyEdgeFlags="left" />
+        <Key android:codes="47" android:keyLabel="/" android:keyWidth="10%p" />
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true" />
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" />
+        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>

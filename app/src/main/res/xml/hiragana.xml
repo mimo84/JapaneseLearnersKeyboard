@@ -4,31 +4,60 @@
           android:verticalGap="0px"
           android:keyHeight="40dp">
     <Row>
-        <Key android:codes="12354" android:keyLabel="あ" />
-        <Key android:codes="12356" android:keyLabel="い" />
-        <Key android:codes="12358" android:keyLabel="う" />
-        <Key android:codes="12360" android:keyLabel="え" />
-        <Key android:codes="12362" android:keyLabel="お" />
-        <Key android:codes="12364" android:keyLabel="が" />
-        <Key android:codes="12366" android:keyLabel="ぎ" />
-        <Key android:codes="12368" android:keyLabel="ぐ" />
-        <Key android:codes="12370" android:keyLabel="げ" />
-        <Key android:codes="12372" android:keyLabel="ご" />
-        <Key android:codes="12374" android:keyLabel="ざ" />
+        <Key android:popupKeyboard="@xml/popup_template"
+             android:popupCharacters="ぁ"
+             android:codes="12354" android:keyLabel="あ" />
+        <Key
+            android:popupKeyboard="@xml/popup_template"
+            android:popupCharacters="ぃ"
+            android:codes="12356"
+            android:keyLabel="い" />
+        <Key
+            android:popupKeyboard="@xml/popup_template"
+            android:popupCharacters="ぅ"
+            android:codes="12358" android:keyLabel="う" />
+
+        <Key android:popupKeyboard="@xml/popup_template"
+            android:popupCharacters="ぇ"
+            android:codes="12360" android:keyLabel="え" />
+
+        <Key
+            android:popupKeyboard="@xml/popup_template"
+            android:popupCharacters="ぉ"
+            android:codes="12362" android:keyLabel="お" />
+
+        <Key android:codes="12363" android:keyLabel="か" />
+        <Key android:codes="12365" android:keyLabel="き" />
+        <Key android:codes="12367" android:keyLabel="く" />
+        <Key android:codes="12369" android:keyLabel="け" />
+        <Key android:codes="12371" android:keyLabel="こ" />
+
+        <Key android:codes="12373" android:keyLabel="さ" />
+        <Key android:codes="12375" android:keyLabel="し" />
+        <Key android:codes="12377" android:keyLabel="す" />
+        <Key android:codes="12379" android:keyLabel="せ" />
+        <Key android:codes="12381" android:keyLabel="そ" />
+
     </Row>
     <Row>
-        <Key android:codes="12376" android:keyLabel="じ" />
-        <Key android:codes="12378" android:keyLabel="ず" />
-        <Key android:codes="12380" android:keyLabel="ぜ" />
-        <Key android:codes="12382" android:keyLabel="ぞ" />
-        <Key android:codes="12384" android:keyLabel="だ" />
-        <Key android:codes="12386" android:keyLabel="ぢ" />
+
+        <Key android:codes="12383" android:keyLabel="た" />
+        <Key android:codes="12385" android:keyLabel="ち" />
         <Key android:codes="12388" android:keyLabel="つ" />
         <Key android:codes="12390" android:keyLabel="て" />
         <Key android:codes="12392" android:keyLabel="と" />
+
         <Key android:codes="12394" android:keyLabel="な" />
+        <Key android:codes="12395" android:keyLabel="に" />
         <Key android:codes="12396" android:keyLabel="ぬ" />
+        <Key android:codes="12397" android:keyLabel="ね" />
         <Key android:codes="12398" android:keyLabel="の" />
+
+
+
+
+
+
     </Row>
     <Row>
         <Key android:codes="12400" android:keyLabel="ば" />
@@ -53,6 +82,23 @@
         <Key android:codes="12434" android:keyLabel="を" />
         <Key android:codes="12436" android:keyLabel="ゔ" />
     </Row>
+    <Row>
+        <Key android:codes="12364" android:keyLabel="が" />
+        <Key android:codes="12366" android:keyLabel="ぎ" />
+        <Key android:codes="12368" android:keyLabel="ぐ" />
+        <Key android:codes="12370" android:keyLabel="げ" />
+        <Key android:codes="12372" android:keyLabel="ご" />
+
+        <Key android:codes="12374" android:keyLabel="ざ" />
+        <Key android:codes="12376" android:keyLabel="じ" />
+        <Key android:codes="12378" android:keyLabel="ず" />
+        <Key android:codes="12380" android:keyLabel="ぜ" />
+        <Key android:codes="12382" android:keyLabel="ぞ" />
+
+        <Key android:codes="12384" android:keyLabel="だ" />
+        <Key android:codes="12386" android:keyLabel="ぢ" />
+    </Row>
+
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="47" android:keyLabel="/" android:keyWidth="10%p" />

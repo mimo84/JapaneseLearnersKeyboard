@@ -10,26 +10,15 @@
         <Key android:codes="12357" android:keyLabel="ぅ" />
         <Key android:codes="12359" android:keyLabel="ぇ" />
         <Key android:codes="12361" android:keyLabel="ぉ" />
-        <Key android:codes="12363" android:keyLabel="か" />
-        <Key android:codes="12365" android:keyLabel="き" />
-        <Key android:codes="12367" android:keyLabel="く" />
-        <Key android:codes="12369" android:keyLabel="け" />
-        <Key android:codes="12371" android:keyLabel="こ" />
-        <Key android:codes="12373" android:keyLabel="さ" />
-        <Key android:codes="12375" android:keyLabel="し" />
+
     </Row>
     <Row>
-        <Key android:codes="12377" android:keyLabel="す" />
-        <Key android:codes="12379" android:keyLabel="せ" />
-        <Key android:codes="12381" android:keyLabel="そ" />
-        <Key android:codes="12383" android:keyLabel="た" />
-        <Key android:codes="12385" android:keyLabel="ち" />
+
         <Key android:codes="12387" android:keyLabel="っ" />
         <Key android:codes="12389" android:keyLabel="づ" />
         <Key android:codes="12391" android:keyLabel="で" />
         <Key android:codes="12393" android:keyLabel="ど" />
-        <Key android:codes="12395" android:keyLabel="に" />
-        <Key android:codes="12397" android:keyLabel="ね" />
+
     </Row>
     <Row>
         <Key android:codes="12399" android:keyLabel="は" />

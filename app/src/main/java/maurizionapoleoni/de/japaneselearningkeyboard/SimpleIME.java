@@ -3,15 +3,15 @@ package maurizionapoleoni.de.japaneselearningkeyboard;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 
 
 public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
     private KeyboardView kv;
-    private Keyboard hkeyboard;
+    private Keyboard hKeyboard;
     private Keyboard kKeyboard;
+    private Keyboard qKeyboard;
 
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
@@ -28,14 +28,13 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
                 break;
 
             case -8:
-                kv.setKeyboard(hkeyboard);
+                kv.setKeyboard(qKeyboard);
                 kv.invalidateAllKeys();
                 break;
-
-            case Keyboard.KEYCODE_DONE:
-                ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
+            case -9:
+                kv.setKeyboard(hKeyboard);
+                kv.invalidateAllKeys();
                 break;
-
             default:
                 char code = (char) primaryCode;
                 ic.commitText(String.valueOf(code), 1);
@@ -74,9 +73,10 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
     @Override
     public View onCreateInputView() {
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        hkeyboard = new Keyboard(this, R.xml.hiragana);
+        hKeyboard = new Keyboard(this, R.xml.hiragana);
         kKeyboard = new Keyboard(this, R.xml.katakana);
-        kv.setKeyboard(hkeyboard);
+        qKeyboard = new Keyboard(this, R.xml.qwerty);
+        kv.setKeyboard(hKeyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
     }

@@ -1,6 +1,12 @@
-<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyWidth="10%p" android:horizontalGap="0px" android:verticalGap="0px" android:keyHeight="40dp">
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+          android:keyWidth="10%p"
+          android:horizontalGap="0px"
+          android:verticalGap="0px"
+          android:keyHeight="@dimen/key_height"
+    >
 
-    <Row>
+
+<Row>
         <Key android:popupKeyboard="@xml/popup_template"
              android:popupCharacters="ぁ"
              android:codes="12354" android:keyLabel="あ" />
@@ -198,9 +204,13 @@
         <Key android:codes="12289" android:keyLabel="、" android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="12290" android:keyLabel="。" android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="12540" android:keyLabel="ー" android:keyWidth="10%p" android:keyEdgeFlags="left" />
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true" />
+
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space"
+             android:keyWidth="30%p" android:isRepeatable="true"/>
+
         <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" />
-        <Key android:codes="-4" android:keyLabel="⏎" android:keyWidth="20%p" android:isRepeatable="true" />
-        <Key android:codes="-7" android:keyLabel="あ/ア" android:keyWidth="20%p" android:keyEdgeFlags="right" />
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+             android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-7" android:keyLabel="ア" android:keyWidth="20%p" android:keyEdgeFlags="right" />
     </Row>
 </Keyboard>

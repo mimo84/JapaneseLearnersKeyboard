@@ -10,7 +10,6 @@
             android:popupCharacters="ぃ"
             android:codes="12356" android:keyLabel="い" />
 
-        <Key android:codes="12357" android:keyLabel="ぅ" />
         <Key
             android:popupKeyboard="@xml/popup_template"
             android:popupCharacters="ぅ"
@@ -19,20 +18,19 @@
         <Key
             android:popupKeyboard="@xml/popup_template"
             android:popupCharacters="ぇ"
-            android:codes="12359" android:keyLabel="え" />
+            android:codes="12360" android:keyLabel="え" />
 
         <Key
             android:popupKeyboard="@xml/popup_template"
             android:popupCharacters="ぉ"
             android:codes="12362" android:keyLabel="お" />
-
+    </Row>
+    <Row>
 
         <Key
             android:popupKeyboard="@xml/popup_template"
-            android:popupCharacters="がゕ"
+            android:popupCharacters="が"
             android:codes="12363" android:keyLabel="か" />
-    </Row>
-    <Row>
 
         <Key
             android:popupKeyboard="@xml/popup_template"
@@ -129,7 +127,7 @@
 
         <Key
             android:popupKeyboard="@xml/popup_template"
-            android:popupCharacters="ばば"
+            android:popupCharacters="ばぱ"
             android:codes="12399" android:keyLabel="は" />
 
 
@@ -202,6 +200,7 @@
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="12289" android:keyLabel="、" android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="12290" android:keyLabel="。" android:keyWidth="10%p" android:keyEdgeFlags="left" />
+        <Key android:codes="12540" android:keyLabel="ー" android:keyWidth="10%p" android:keyEdgeFlags="left" />
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true" />
         <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" />
         <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right" />

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">JapaneseLearningKeyboard</string>
-    <string name="simple_ime">Simple IME</string>
-    <string name="subtype_en_US">English (US)</string>
+    <string name="simple_ime">Japanese Learner Keyboard</string>
+    <string name="subtype_ja">Japanese</string>
 </resources>

@@ -24,7 +24,7 @@ var updateRow = function () {
 };
 
 var y = 1;
-for (var i = ranges.hiragana.start.charCodeAt(0); i<ranges.hiragana.finish.charCodeAt(0); i++) {
+for (var i = ranges.katakana.start.charCodeAt(0); i<ranges.katakana.finish.charCodeAt(0); i++) {
   if (y==12) {
     y = 1;
     first += '</Row><Row>';
@@ -38,5 +38,4 @@ if (y<=12) {
 }
 
 console.log(first);
-ぷ
-android:popupCharacters="ぶ ぶ ぶ ぶ ぶ ぶ " "
+copy(first);

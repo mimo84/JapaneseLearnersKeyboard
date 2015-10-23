@@ -175,8 +175,7 @@
         <Key android:codes="12523" android:keyLabel="ル" />
         <Key android:codes="12524" android:keyLabel="レ" />
         <Key android:codes="12525" android:keyLabel="ロ" />
-    </Row>
-    <Row>
+
         <Key
             android:popupKeyboard="@xml/popup_template"
             android:popupCharacters="ヮ"
@@ -184,16 +183,15 @@
 
         <Key android:codes="12530" android:keyLabel="ヲ" />
         <Key android:codes="12531" android:keyLabel="ン" />
-
-
     </Row>
+
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="12289" android:keyLabel="、" android:keyWidth="10%p" android:keyEdgeFlags="left" />
-        <Key android:codes="12290" android:keyLabel="。" android:keyWidth="10%p" android:keyEdgeFlags="left" />
-        <Key android:codes="12540" android:keyLabel="ー" android:keyWidth="10%p" android:keyEdgeFlags="left" />
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true" />
-        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true" />
-        <Key android:codes="-4" android:keyLabel="⏎" android:keyWidth="20%p" android:isRepeatable="true" />
+        <Key android:codes="12289" android:keyLabel="、" />
+        <Key android:codes="12290" android:keyLabel="。" />
+        <Key android:codes="12540" android:keyLabel="ー" />
+        <Key android:codes="32" android:keyLabel=" " android:keyWidth="30%p" android:isRepeatable="true" />
+        <Key android:codes="-5" android:keyLabel="DEL" android:isRepeatable="true" />
+        <Key android:codes="-4" android:keyLabel="⏎" android:isRepeatable="true" />
         <Key android:codes="-8" android:keyLabel="ア/あ" android:keyWidth="20%p" android:keyEdgeFlags="right" />
     </Row>
 </Keyboard>

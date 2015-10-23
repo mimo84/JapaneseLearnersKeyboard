@@ -3,13 +3,14 @@ package maurizionapoleoni.de.japaneselearningkeyboard;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 
 
 public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
     private KeyboardView kv;
-    private Keyboard keyboard;
+    private Keyboard hkeyboard;
     private Keyboard kKeyboard;
 
     @Override
@@ -20,13 +21,19 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
             case Keyboard.KEYCODE_DELETE:
                 ic.deleteSurroundingText(1, 0);
                 break;
-            case Keyboard.KEYCODE_SHIFT:
+
+            case -7:
                 kv.setKeyboard(kKeyboard);
                 kv.invalidateAllKeys();
                 break;
-            case Keyboard.KEYCODE_DONE:
-                kv.setKeyboard(kKeyboard);
+
+            case -8:
+                kv.setKeyboard(hkeyboard);
                 kv.invalidateAllKeys();
+                break;
+
+            case Keyboard.KEYCODE_DONE:
+                ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 break;
 
             default:
@@ -67,9 +74,9 @@ public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyb
     @Override
     public View onCreateInputView() {
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboard = new Keyboard(this, R.xml.hiragana);
+        hkeyboard = new Keyboard(this, R.xml.hiragana);
         kKeyboard = new Keyboard(this, R.xml.katakana);
-        kv.setKeyboard(keyboard);
+        kv.setKeyboard(hkeyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
     }
